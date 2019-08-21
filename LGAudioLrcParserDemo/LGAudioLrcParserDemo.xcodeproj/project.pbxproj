@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CE67822230D1D7000EBF673 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE67821230D1D7000EBF673 /* AppDelegate.m */; };
+		3CE67825230D1D7000EBF673 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE67824230D1D7000EBF673 /* ViewController.m */; };
+		3CE67828230D1D7000EBF673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67826230D1D7000EBF673 /* Main.storyboard */; };
+		3CE6782A230D1D7200EBF673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67829230D1D7200EBF673 /* Assets.xcassets */; };
+		3CE6782D230D1D7200EBF673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE6782B230D1D7200EBF673 /* LaunchScreen.storyboard */; };
+		3CE67830230D1D7200EBF673 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE6782F230D1D7200EBF673 /* main.m */; };
+		3CE67839230D1E4400EBF673 /* LGLrcParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE67838230D1E4400EBF673 /* LGLrcParser.m */; };
+		3CE6783C230D1EC800EBF673 /* LGLrcParserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE6783B230D1EC800EBF673 /* LGLrcParserModel.m */; };
+		3CE6784D230D1FF200EBF673 /* 那就这样吧.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 3CE6783E230D1FF200EBF673 /* 那就这样吧.lrc */; };
+		3CE6784E230D1FF200EBF673 /* 那就这样吧.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CE6783F230D1FF200EBF673 /* 那就这样吧.mp3 */; };
+		3CE6784F230D1FF200EBF673 /* 董小姐.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67840230D1FF200EBF673 /* 董小姐.mp3 */; };
+		3CE67850230D1FF200EBF673 /* wall1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67841230D1FF200EBF673 /* wall1.jpg */; };
+		3CE67851230D1FF200EBF673 /* Dont.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67842230D1FF200EBF673 /* Dont.lrc */; };
+		3CE67852230D1FF200EBF673 /* wall2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67843230D1FF200EBF673 /* wall2.jpg */; };
+		3CE67853230D1FF200EBF673 /* Dont.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67844230D1FF200EBF673 /* Dont.mp3 */; };
+		3CE67854230D1FF200EBF673 /* 董小姐.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67845230D1FF200EBF673 /* 董小姐.lrc */; };
+		3CE67855230D1FF200EBF673 /* 歌曲！.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67846230D1FF200EBF673 /* 歌曲！.mp3 */; };
+		3CE67856230D1FF200EBF673 /* 歌曲！.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67847230D1FF200EBF673 /* 歌曲！.lrc */; };
+		3CE67857230D1FF200EBF673 /* wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67848230D1FF200EBF673 /* wall.jpg */; };
+		3CE67858230D1FF200EBF673 /* 冰雨.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67849230D1FF200EBF673 /* 冰雨.lrc */; };
+		3CE67859230D1FF200EBF673 /* 别管我要存在感.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CE6784A230D1FF200EBF673 /* 别管我要存在感.mp3 */; };
+		3CE6785A230D1FF200EBF673 /* 别管我要存在感.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 3CE6784B230D1FF200EBF673 /* 别管我要存在感.lrc */; };
+		3CE6785B230D1FF200EBF673 /* 冰雨.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CE6784C230D1FF200EBF673 /* 冰雨.mp3 */; };
+		3CE67860230D211500EBF673 /* LGRefreshLrcLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE6785F230D211500EBF673 /* LGRefreshLrcLabel.m */; };
+		3CE67863230D219600EBF673 /* LGLrcCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE67862230D219600EBF673 /* LGLrcCell.m */; };
+		E310DA0FC8D82FBD371D462C /* Pods_LGAudioLrcParserDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E41B9BB01E4A8638E15671 /* Pods_LGAudioLrcParserDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20E41B9BB01E4A8638E15671 /* Pods_LGAudioLrcParserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGAudioLrcParserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE6781D230D1D7000EBF673 /* LGAudioLrcParserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGAudioLrcParserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE67820230D1D7000EBF673 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3CE67821230D1D7000EBF673 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3CE67823230D1D7000EBF673 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3CE67824230D1D7000EBF673 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3CE67827230D1D7000EBF673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CE67829230D1D7200EBF673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CE6782C230D1D7200EBF673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CE6782E230D1D7200EBF673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CE6782F230D1D7200EBF673 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3CE67837230D1E4400EBF673 /* LGLrcParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLrcParser.h; sourceTree = "<group>"; };
+		3CE67838230D1E4400EBF673 /* LGLrcParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGLrcParser.m; sourceTree = "<group>"; };
+		3CE6783A230D1EC800EBF673 /* LGLrcParserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLrcParserModel.h; sourceTree = "<group>"; };
+		3CE6783B230D1EC800EBF673 /* LGLrcParserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGLrcParserModel.m; sourceTree = "<group>"; };
+		3CE6783E230D1FF200EBF673 /* 那就这样吧.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "那就这样吧.lrc"; sourceTree = "<group>"; };
+		3CE6783F230D1FF200EBF673 /* 那就这样吧.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "那就这样吧.mp3"; sourceTree = "<group>"; };
+		3CE67840230D1FF200EBF673 /* 董小姐.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "董小姐.mp3"; sourceTree = "<group>"; };
+		3CE67841230D1FF200EBF673 /* wall1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall1.jpg; sourceTree = "<group>"; };
+		3CE67842230D1FF200EBF673 /* Dont.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dont.lrc; sourceTree = "<group>"; };
+		3CE67843230D1FF200EBF673 /* wall2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall2.jpg; sourceTree = "<group>"; };
+		3CE67844230D1FF200EBF673 /* Dont.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dont.mp3; sourceTree = "<group>"; };
+		3CE67845230D1FF200EBF673 /* 董小姐.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "董小姐.lrc"; sourceTree = "<group>"; };
+		3CE67846230D1FF200EBF673 /* 歌曲！.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "歌曲！.mp3"; sourceTree = "<group>"; };
+		3CE67847230D1FF200EBF673 /* 歌曲！.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "歌曲！.lrc"; sourceTree = "<group>"; };
+		3CE67848230D1FF200EBF673 /* wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall.jpg; sourceTree = "<group>"; };
+		3CE67849230D1FF200EBF673 /* 冰雨.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "冰雨.lrc"; sourceTree = "<group>"; };
+		3CE6784A230D1FF200EBF673 /* 别管我要存在感.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "别管我要存在感.mp3"; sourceTree = "<group>"; };
+		3CE6784B230D1FF200EBF673 /* 别管我要存在感.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "别管我要存在感.lrc"; sourceTree = "<group>"; };
+		3CE6784C230D1FF200EBF673 /* 冰雨.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "冰雨.mp3"; sourceTree = "<group>"; };
+		3CE6785E230D211500EBF673 /* LGRefreshLrcLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGRefreshLrcLabel.h; sourceTree = "<group>"; };
+		3CE6785F230D211500EBF673 /* LGRefreshLrcLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGRefreshLrcLabel.m; sourceTree = "<group>"; };
+		3CE67861230D219600EBF673 /* LGLrcCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLrcCell.h; sourceTree = "<group>"; };
+		3CE67862230D219600EBF673 /* LGLrcCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGLrcCell.m; sourceTree = "<group>"; };
+		B22583EBF9725143E4CB25B0 /* Pods-LGAudioLrcParserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGAudioLrcParserDemo.release.xcconfig"; path = "Target Support Files/Pods-LGAudioLrcParserDemo/Pods-LGAudioLrcParserDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D799E20F9ECD2CFA9F337CF7 /* Pods-LGAudioLrcParserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGAudioLrcParserDemo.debug.xcconfig"; path = "Target Support Files/Pods-LGAudioLrcParserDemo/Pods-LGAudioLrcParserDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CE6781A230D1D7000EBF673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E310DA0FC8D82FBD371D462C /* Pods_LGAudioLrcParserDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CE67814230D1D7000EBF673 = {
+			isa = PBXGroup;
+			children = (
+				3CE6781F230D1D7000EBF673 /* LGAudioLrcParserDemo */,
+				3CE6781E230D1D7000EBF673 /* Products */,
+				3D08BBE1AD88B6477061E936 /* Pods */,
+				6DD9541E866D580C2C489787 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3CE6781E230D1D7000EBF673 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CE6781D230D1D7000EBF673 /* LGAudioLrcParserDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CE6781F230D1D7000EBF673 /* LGAudioLrcParserDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3CE67836230D1D9B00EBF673 /* LGAudioLrcParser */,
+				3CE67820230D1D7000EBF673 /* AppDelegate.h */,
+				3CE67821230D1D7000EBF673 /* AppDelegate.m */,
+				3CE67823230D1D7000EBF673 /* ViewController.h */,
+				3CE67824230D1D7000EBF673 /* ViewController.m */,
+				3CE67826230D1D7000EBF673 /* Main.storyboard */,
+				3CE67829230D1D7200EBF673 /* Assets.xcassets */,
+				3CE6782B230D1D7200EBF673 /* LaunchScreen.storyboard */,
+				3CE6782E230D1D7200EBF673 /* Info.plist */,
+				3CE6782F230D1D7200EBF673 /* main.m */,
+			);
+			path = LGAudioLrcParserDemo;
+			sourceTree = "<group>";
+		};
+		3CE67836230D1D9B00EBF673 /* LGAudioLrcParser */ = {
+			isa = PBXGroup;
+			children = (
+				3CE6785C230D205A00EBF673 /* Model */,
+				3CE6785D230D205A00EBF673 /* View */,
+				3CE6783D230D1FF200EBF673 /* Resource */,
+			);
+			path = LGAudioLrcParser;
+			sourceTree = "<group>";
+		};
+		3CE6783D230D1FF200EBF673 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3CE6783E230D1FF200EBF673 /* 那就这样吧.lrc */,
+				3CE6783F230D1FF200EBF673 /* 那就这样吧.mp3 */,
+				3CE67840230D1FF200EBF673 /* 董小姐.mp3 */,
+				3CE67841230D1FF200EBF673 /* wall1.jpg */,
+				3CE67842230D1FF200EBF673 /* Dont.lrc */,
+				3CE67843230D1FF200EBF673 /* wall2.jpg */,
+				3CE67844230D1FF200EBF673 /* Dont.mp3 */,
+				3CE67845230D1FF200EBF673 /* 董小姐.lrc */,
+				3CE67846230D1FF200EBF673 /* 歌曲！.mp3 */,
+				3CE67847230D1FF200EBF673 /* 歌曲！.lrc */,
+				3CE67848230D1FF200EBF673 /* wall.jpg */,
+				3CE67849230D1FF200EBF673 /* 冰雨.lrc */,
+				3CE6784A230D1FF200EBF673 /* 别管我要存在感.mp3 */,
+				3CE6784B230D1FF200EBF673 /* 别管我要存在感.lrc */,
+				3CE6784C230D1FF200EBF673 /* 冰雨.mp3 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3CE6785C230D205A00EBF673 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CE67837230D1E4400EBF673 /* LGLrcParser.h */,
+				3CE67838230D1E4400EBF673 /* LGLrcParser.m */,
+				3CE6783A230D1EC800EBF673 /* LGLrcParserModel.h */,
+				3CE6783B230D1EC800EBF673 /* LGLrcParserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CE6785D230D205A00EBF673 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3CE6785E230D211500EBF673 /* LGRefreshLrcLabel.h */,
+				3CE6785F230D211500EBF673 /* LGRefreshLrcLabel.m */,
+				3CE67861230D219600EBF673 /* LGLrcCell.h */,
+				3CE67862230D219600EBF673 /* LGLrcCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D08BBE1AD88B6477061E936 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D799E20F9ECD2CFA9F337CF7 /* Pods-LGAudioLrcParserDemo.debug.xcconfig */,
+				B22583EBF9725143E4CB25B0 /* Pods-LGAudioLrcParserDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6DD9541E866D580C2C489787 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20E41B9BB01E4A8638E15671 /* Pods_LGAudioLrcParserDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CE6781C230D1D7000EBF673 /* LGAudioLrcParserDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CE67833230D1D7200EBF673 /* Build configuration list for PBXNativeTarget "LGAudioLrcParserDemo" */;
+			buildPhases = (
+				72547C143C60A2ADE99E0EFC /* [CP] Check Pods Manifest.lock */,
+				3CE67819230D1D7000EBF673 /* Sources */,
+				3CE6781A230D1D7000EBF673 /* Frameworks */,
+				3CE6781B230D1D7000EBF673 /* Resources */,
+				238991DA14074D5F6454392F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LGAudioLrcParserDemo;
+			productName = LGAudioLrcParserDemo;
+			productReference = 3CE6781D230D1D7000EBF673 /* LGAudioLrcParserDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CE67815230D1D7000EBF673 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = citex;
+				TargetAttributes = {
+					3CE6781C230D1D7000EBF673 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 3CE67818230D1D7000EBF673 /* Build configuration list for PBXProject "LGAudioLrcParserDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CE67814230D1D7000EBF673;
+			productRefGroup = 3CE6781E230D1D7000EBF673 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CE6781C230D1D7000EBF673 /* LGAudioLrcParserDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CE6781B230D1D7000EBF673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE67855230D1FF200EBF673 /* 歌曲！.mp3 in Resources */,
+				3CE67850230D1FF200EBF673 /* wall1.jpg in Resources */,
+				3CE6782D230D1D7200EBF673 /* LaunchScreen.storyboard in Resources */,
+				3CE67852230D1FF200EBF673 /* wall2.jpg in Resources */,
+				3CE6785B230D1FF200EBF673 /* 冰雨.mp3 in Resources */,
+				3CE6785A230D1FF200EBF673 /* 别管我要存在感.lrc in Resources */,
+				3CE67854230D1FF200EBF673 /* 董小姐.lrc in Resources */,
+				3CE6784E230D1FF200EBF673 /* 那就这样吧.mp3 in Resources */,
+				3CE67859230D1FF200EBF673 /* 别管我要存在感.mp3 in Resources */,
+				3CE6782A230D1D7200EBF673 /* Assets.xcassets in Resources */,
+				3CE67851230D1FF200EBF673 /* Dont.lrc in Resources */,
+				3CE6784F230D1FF200EBF673 /* 董小姐.mp3 in Resources */,
+				3CE67853230D1FF200EBF673 /* Dont.mp3 in Resources */,
+				3CE67858230D1FF200EBF673 /* 冰雨.lrc in Resources */,
+				3CE67856230D1FF200EBF673 /* 歌曲！.lrc in Resources */,
+				3CE67828230D1D7000EBF673 /* Main.storyboard in Resources */,
+				3CE6784D230D1FF200EBF673 /* 那就这样吧.lrc in Resources */,
+				3CE67857230D1FF200EBF673 /* wall.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		238991DA14074D5F6454392F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LGAudioLrcParserDemo/Pods-LGAudioLrcParserDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LGAudioLrcParserDemo/Pods-LGAudioLrcParserDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LGAudioLrcParserDemo/Pods-LGAudioLrcParserDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72547C143C60A2ADE99E0EFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LGAudioLrcParserDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CE67819230D1D7000EBF673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE67825230D1D7000EBF673 /* ViewController.m in Sources */,
+				3CE67860230D211500EBF673 /* LGRefreshLrcLabel.m in Sources */,
+				3CE67839230D1E4400EBF673 /* LGLrcParser.m in Sources */,
+				3CE67830230D1D7200EBF673 /* main.m in Sources */,
+				3CE67822230D1D7000EBF673 /* AppDelegate.m in Sources */,
+				3CE67863230D219600EBF673 /* LGLrcCell.m in Sources */,
+				3CE6783C230D1EC800EBF673 /* LGLrcParserModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3CE67826230D1D7000EBF673 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CE67827230D1D7000EBF673 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CE6782B230D1D7200EBF673 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CE6782C230D1D7200EBF673 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CE67831230D1D7200EBF673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3CE67832230D1D7200EBF673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CE67834230D1D7200EBF673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D799E20F9ECD2CFA9F337CF7 /* Pods-LGAudioLrcParserDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9NK874KLQ;
+				INFOPLIST_FILE = LGAudioLrcParserDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citex.LGAudioLrcParserDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CE67835230D1D7200EBF673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B22583EBF9725143E4CB25B0 /* Pods-LGAudioLrcParserDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9NK874KLQ;
+				INFOPLIST_FILE = LGAudioLrcParserDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citex.LGAudioLrcParserDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CE67818230D1D7000EBF673 /* Build configuration list for PBXProject "LGAudioLrcParserDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CE67831230D1D7200EBF673 /* Debug */,
+				3CE67832230D1D7200EBF673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CE67833230D1D7200EBF673 /* Build configuration list for PBXNativeTarget "LGAudioLrcParserDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CE67834230D1D7200EBF673 /* Debug */,
+				3CE67835230D1D7200EBF673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CE67815230D1D7000EBF673 /* Project object */;
+}
