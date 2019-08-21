@@ -34,4 +34,6 @@ Pod::Spec.new do |spec|
    ss.dependency 'LGAudioLrcParser/Model'	
   end
 
+  spec.resource_bundles = {'LGLrc' => ['LGAudioLrcParserDemo/LGAudioLrcParserDemo/LGAudioLrcParser/Resource/*']}
+
 end

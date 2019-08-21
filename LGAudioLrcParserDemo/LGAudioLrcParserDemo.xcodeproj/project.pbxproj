@@ -107,7 +107,6 @@
 		3CE6781F230D1D7000EBF673 /* LGAudioLrcParserDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3CE6783D230D1FF200EBF673 /* Resource */,
 				3CE67836230D1D9B00EBF673 /* LGAudioLrcParser */,
 				3CE67820230D1D7000EBF673 /* AppDelegate.h */,
 				3CE67821230D1D7000EBF673 /* AppDelegate.m */,
@@ -125,6 +124,7 @@
 		3CE67836230D1D9B00EBF673 /* LGAudioLrcParser */ = {
 			isa = PBXGroup;
 			children = (
+				3CE6783D230D1FF200EBF673 /* Resource */,
 				3CE6785C230D205A00EBF673 /* Model */,
 				3CE6785D230D205A00EBF673 /* View */,
 			);
