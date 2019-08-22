@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "LGAudioLrcParser"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "歌词解析类"
   spec.description  = <<-DESC
 			歌词解析类。

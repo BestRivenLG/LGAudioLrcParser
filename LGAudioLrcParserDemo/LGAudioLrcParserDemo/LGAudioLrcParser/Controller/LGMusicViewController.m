@@ -144,7 +144,6 @@
     LGLrcCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LGLrcCell"];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.refreshLrcLabel.text = self.lrcContent.lrcArrayStr[indexPath.row];
-    NSLog(@"=====%@===长度%ld",cell.refreshLrcLabel.text,cell.refreshLrcLabel.text.length);
     [cell.refreshLrcLabel sizeToFit];
     if(indexPath.row==_currentRow){
         cell.refreshLrcLabel.font = [UIFont systemFontOfSize:16];
