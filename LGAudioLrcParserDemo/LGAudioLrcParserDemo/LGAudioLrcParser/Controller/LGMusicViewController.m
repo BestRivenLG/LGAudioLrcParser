@@ -1,29 +1,85 @@
 //
-//  ViewController.m
+//  LGMusicViewController.m
 //  LGAudioLrcParserDemo
 //
 //  Created by citex on 2019/8/21.
 //  Copyright © 2019 citex. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LGMusicViewController.h"
+#import <Masonry/Masonry.h>
 #import "LGLrcParser.h"
 #import "LGLrcCell.h"
 #import "LGLrcParserModel.h"
 #import <AVFoundation/AVFoundation.h>
-#import "LGMusicViewController.h"
 
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *lrcTableView;
+@interface LGMusicViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic,strong)UITableView *lrcTableView;
 @property (nonatomic,strong) LGLrcParser *lrcContent;
 @property (nonatomic,strong) AVAudioPlayer *player;
 @property (assign) NSInteger currentRow;
+@property (nonatomic,strong) NSTimer *timer;
 @end
 
-@implementation ViewController
-- (IBAction)jumpAction:(id)sender {
-    [self presentViewController:[[LGMusicViewController alloc] init] animated:YES completion:nil];
+@implementation LGMusicViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    [self.view addSubview:tableView];
+    tableView.dataSource = self;
+    tableView.delegate = self;
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.lrcTableView = tableView;
+    
+    [self.lrcTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.width.mas_equalTo(300);
+        make.top.bottom.mas_equalTo(0);
+    }];
+    
+    
+    UIButton *backBtn = [[UIButton alloc] init];
+    [backBtn setTitle:@"退出" forState:UIControlStateNormal];
+    [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    backBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    [backBtn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backBtn];
+    [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(40);
+        make.top.mas_equalTo(44);
+    }];
+    
+    self.lrcContent = [[LGLrcParser alloc] initWithFileName:@"Dont" ofType:@"lrc"];
+    [self.lrcTableView reloadData];
+    [self initPlayer];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
+    self.timer = timer;
+    
+    UIImage *img=[UIImage imageNamed:@"wall1.jpg"];
+    
+    UIImageView *bgView=[[UIImageView alloc] initWithImage:img];
+    //bgView.alpha=0.8;
+    self.lrcTableView.backgroundView=bgView;
+    [bgView setImage:[self getBlurredImage:img]];
+    [self.lrcTableView registerClass:[LGLrcCell class] forCellReuseIdentifier:@"LGLrcCell"];
+
 }
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.player stop];
+    [self.timer invalidate];
+    self.timer = nil;
+}
+
+- (void)backAction {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 -(void) initPlayer{
     AVAudioSession *session=[AVAudioSession sharedInstance];
     [session setActive:YES error:nil];
@@ -37,29 +93,6 @@
     [self.player prepareToPlay];
     [self.player play];
     
-}
-
-- (void)configureData {
-    self.lrcContent = [[LGLrcParser alloc] initWithFileName:@"Dont" ofType:@"lrc"];
-    [self.lrcTableView reloadData];
-    [self initPlayer];
-    [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
-    
-    
-    UIImage *img=[UIImage imageNamed:@"wall1.jpg"];
-    
-    UIImageView *bgView=[[UIImageView alloc] initWithImage:img];
-    //bgView.alpha=0.8;
-    self.lrcTableView.backgroundView=bgView;
-    [bgView setImage:[self getBlurredImage:img]];
-    [self.lrcTableView registerClass:[LGLrcCell class] forCellReuseIdentifier:@"LGLrcCell"];
-    
-
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-//    [self configureData];
 }
 
 -(void) updateTime{
@@ -134,5 +167,9 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     //    return UITableViewAutomaticDimension;
     return 60;
+}
+
+-(void)dealloc{
+    NSLog(@"播放界面销毁了");
 }
 @end

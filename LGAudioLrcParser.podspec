@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "LGAudioLrcParser"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "歌词解析类"
   spec.description  = <<-DESC
 			歌词解析类。
@@ -32,6 +32,15 @@ Pod::Spec.new do |spec|
    ss.source_files		=	'LGAudioLrcParserDemo/LGAudioLrcParserDemo/LGAudioLrcParser/View/**.{h,m}'
    ss.public_header_files	=	'LGAudioLrcParserDemo/LGAudioLrcParserDemo/LGAudioLrcParser/View/**.h'
    ss.dependency 'LGAudioLrcParser/Model'	
+  end
+
+  # Controller
+  spec.subspec 'Controller' do |ss|
+   ss.source_files		=	'LGAudioLrcParserDemo/LGAudioLrcParserDemo/LGAudioLrcParser/Controller/**.{h,m}'
+   ss.public_header_files	=	'LGAudioLrcParserDemo/LGAudioLrcParserDemo/LGAudioLrcParser/Controller/**.h'
+   ss.dependency 'LGAudioLrcParser/Model'
+   ss.dependency 'LGAudioLrcParser/View'	
+   ss.frameworks = "AVFoundation"	
   end
 
   spec.resource_bundles = {'LGLrc' => ['LGAudioLrcParserDemo/LGAudioLrcParserDemo/LGAudioLrcParser/Resource/*']}

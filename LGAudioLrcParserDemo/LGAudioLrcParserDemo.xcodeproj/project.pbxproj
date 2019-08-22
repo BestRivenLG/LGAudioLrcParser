@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CBDF2FC230D54DE00DD16B9 /* LGMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF2FB230D54DE00DD16B9 /* LGMusicViewController.m */; };
 		3CE67822230D1D7000EBF673 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE67821230D1D7000EBF673 /* AppDelegate.m */; };
 		3CE67825230D1D7000EBF673 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE67824230D1D7000EBF673 /* ViewController.m */; };
 		3CE67828230D1D7000EBF673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67826230D1D7000EBF673 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		20E41B9BB01E4A8638E15671 /* Pods_LGAudioLrcParserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGAudioLrcParserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CBDF2FA230D54DE00DD16B9 /* LGMusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGMusicViewController.h; sourceTree = "<group>"; };
+		3CBDF2FB230D54DE00DD16B9 /* LGMusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGMusicViewController.m; sourceTree = "<group>"; };
 		3CE6781D230D1D7000EBF673 /* LGAudioLrcParserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGAudioLrcParserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE67820230D1D7000EBF673 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CE67821230D1D7000EBF673 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CBDF2F9230D547500DD16B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3CBDF2FA230D54DE00DD16B9 /* LGMusicViewController.h */,
+				3CBDF2FB230D54DE00DD16B9 /* LGMusicViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		3CE67814230D1D7000EBF673 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +136,7 @@
 		3CE67836230D1D9B00EBF673 /* LGAudioLrcParser */ = {
 			isa = PBXGroup;
 			children = (
+				3CBDF2F9230D547500DD16B9 /* Controller */,
 				3CE6783D230D1FF200EBF673 /* Resource */,
 				3CE6785C230D205A00EBF673 /* Model */,
 				3CE6785D230D205A00EBF673 /* View */,
@@ -326,6 +339,7 @@
 				3CE67839230D1E4400EBF673 /* LGLrcParser.m in Sources */,
 				3CE67830230D1D7200EBF673 /* main.m in Sources */,
 				3CE67822230D1D7000EBF673 /* AppDelegate.m in Sources */,
+				3CBDF2FC230D54DE00DD16B9 /* LGMusicViewController.m in Sources */,
 				3CE67863230D219600EBF673 /* LGLrcCell.m in Sources */,
 				3CE6783C230D1EC800EBF673 /* LGLrcParserModel.m in Sources */,
 			);
