@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3CBDF2FC230D54DE00DD16B9 /* LGMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF2FB230D54DE00DD16B9 /* LGMusicViewController.m */; };
+		3CBDF2FF230E93F900DD16B9 /* LGLrcBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CBDF2FE230E93F900DD16B9 /* LGLrcBundle.bundle */; };
+		3CBDF302230E9BEE00DD16B9 /* NSBundle+LrcParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF301230E9BEE00DD16B9 /* NSBundle+LrcParser.m */; };
 		3CE67822230D1D7000EBF673 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE67821230D1D7000EBF673 /* AppDelegate.m */; };
 		3CE67825230D1D7000EBF673 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE67824230D1D7000EBF673 /* ViewController.m */; };
 		3CE67828230D1D7000EBF673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67826230D1D7000EBF673 /* Main.storyboard */; };
@@ -16,21 +18,6 @@
 		3CE67830230D1D7200EBF673 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE6782F230D1D7200EBF673 /* main.m */; };
 		3CE67839230D1E4400EBF673 /* LGLrcParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE67838230D1E4400EBF673 /* LGLrcParser.m */; };
 		3CE6783C230D1EC800EBF673 /* LGLrcParserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE6783B230D1EC800EBF673 /* LGLrcParserModel.m */; };
-		3CE6784D230D1FF200EBF673 /* 那就这样吧.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 3CE6783E230D1FF200EBF673 /* 那就这样吧.lrc */; };
-		3CE6784E230D1FF200EBF673 /* 那就这样吧.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CE6783F230D1FF200EBF673 /* 那就这样吧.mp3 */; };
-		3CE6784F230D1FF200EBF673 /* 董小姐.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67840230D1FF200EBF673 /* 董小姐.mp3 */; };
-		3CE67850230D1FF200EBF673 /* wall1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67841230D1FF200EBF673 /* wall1.jpg */; };
-		3CE67851230D1FF200EBF673 /* Dont.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67842230D1FF200EBF673 /* Dont.lrc */; };
-		3CE67852230D1FF200EBF673 /* wall2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67843230D1FF200EBF673 /* wall2.jpg */; };
-		3CE67853230D1FF200EBF673 /* Dont.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67844230D1FF200EBF673 /* Dont.mp3 */; };
-		3CE67854230D1FF200EBF673 /* 董小姐.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67845230D1FF200EBF673 /* 董小姐.lrc */; };
-		3CE67855230D1FF200EBF673 /* 歌曲！.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67846230D1FF200EBF673 /* 歌曲！.mp3 */; };
-		3CE67856230D1FF200EBF673 /* 歌曲！.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67847230D1FF200EBF673 /* 歌曲！.lrc */; };
-		3CE67857230D1FF200EBF673 /* wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67848230D1FF200EBF673 /* wall.jpg */; };
-		3CE67858230D1FF200EBF673 /* 冰雨.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67849230D1FF200EBF673 /* 冰雨.lrc */; };
-		3CE67859230D1FF200EBF673 /* 别管我要存在感.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CE6784A230D1FF200EBF673 /* 别管我要存在感.mp3 */; };
-		3CE6785A230D1FF200EBF673 /* 别管我要存在感.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 3CE6784B230D1FF200EBF673 /* 别管我要存在感.lrc */; };
-		3CE6785B230D1FF200EBF673 /* 冰雨.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CE6784C230D1FF200EBF673 /* 冰雨.mp3 */; };
 		3CE67860230D211500EBF673 /* LGRefreshLrcLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE6785F230D211500EBF673 /* LGRefreshLrcLabel.m */; };
 		3CE67863230D219600EBF673 /* LGLrcCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE67862230D219600EBF673 /* LGLrcCell.m */; };
 		E310DA0FC8D82FBD371D462C /* Pods_LGAudioLrcParserDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E41B9BB01E4A8638E15671 /* Pods_LGAudioLrcParserDemo.framework */; };
@@ -40,6 +27,9 @@
 		20E41B9BB01E4A8638E15671 /* Pods_LGAudioLrcParserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGAudioLrcParserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CBDF2FA230D54DE00DD16B9 /* LGMusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGMusicViewController.h; sourceTree = "<group>"; };
 		3CBDF2FB230D54DE00DD16B9 /* LGMusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGMusicViewController.m; sourceTree = "<group>"; };
+		3CBDF2FE230E93F900DD16B9 /* LGLrcBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LGLrcBundle.bundle; sourceTree = "<group>"; };
+		3CBDF300230E9BEE00DD16B9 /* NSBundle+LrcParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+LrcParser.h"; sourceTree = "<group>"; };
+		3CBDF301230E9BEE00DD16B9 /* NSBundle+LrcParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+LrcParser.m"; sourceTree = "<group>"; };
 		3CE6781D230D1D7000EBF673 /* LGAudioLrcParserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGAudioLrcParserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE67820230D1D7000EBF673 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CE67821230D1D7000EBF673 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,21 +44,6 @@
 		3CE67838230D1E4400EBF673 /* LGLrcParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGLrcParser.m; sourceTree = "<group>"; };
 		3CE6783A230D1EC800EBF673 /* LGLrcParserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLrcParserModel.h; sourceTree = "<group>"; };
 		3CE6783B230D1EC800EBF673 /* LGLrcParserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGLrcParserModel.m; sourceTree = "<group>"; };
-		3CE6783E230D1FF200EBF673 /* 那就这样吧.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "那就这样吧.lrc"; sourceTree = "<group>"; };
-		3CE6783F230D1FF200EBF673 /* 那就这样吧.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "那就这样吧.mp3"; sourceTree = "<group>"; };
-		3CE67840230D1FF200EBF673 /* 董小姐.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "董小姐.mp3"; sourceTree = "<group>"; };
-		3CE67841230D1FF200EBF673 /* wall1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall1.jpg; sourceTree = "<group>"; };
-		3CE67842230D1FF200EBF673 /* Dont.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dont.lrc; sourceTree = "<group>"; };
-		3CE67843230D1FF200EBF673 /* wall2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall2.jpg; sourceTree = "<group>"; };
-		3CE67844230D1FF200EBF673 /* Dont.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dont.mp3; sourceTree = "<group>"; };
-		3CE67845230D1FF200EBF673 /* 董小姐.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "董小姐.lrc"; sourceTree = "<group>"; };
-		3CE67846230D1FF200EBF673 /* 歌曲！.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "歌曲！.mp3"; sourceTree = "<group>"; };
-		3CE67847230D1FF200EBF673 /* 歌曲！.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "歌曲！.lrc"; sourceTree = "<group>"; };
-		3CE67848230D1FF200EBF673 /* wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall.jpg; sourceTree = "<group>"; };
-		3CE67849230D1FF200EBF673 /* 冰雨.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "冰雨.lrc"; sourceTree = "<group>"; };
-		3CE6784A230D1FF200EBF673 /* 别管我要存在感.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "别管我要存在感.mp3"; sourceTree = "<group>"; };
-		3CE6784B230D1FF200EBF673 /* 别管我要存在感.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "别管我要存在感.lrc"; sourceTree = "<group>"; };
-		3CE6784C230D1FF200EBF673 /* 冰雨.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "冰雨.mp3"; sourceTree = "<group>"; };
 		3CE6785E230D211500EBF673 /* LGRefreshLrcLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGRefreshLrcLabel.h; sourceTree = "<group>"; };
 		3CE6785F230D211500EBF673 /* LGRefreshLrcLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGRefreshLrcLabel.m; sourceTree = "<group>"; };
 		3CE67861230D219600EBF673 /* LGLrcCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLrcCell.h; sourceTree = "<group>"; };
@@ -96,6 +71,14 @@
 				3CBDF2FB230D54DE00DD16B9 /* LGMusicViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		3CBDF2FD230E93F900DD16B9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3CBDF2FE230E93F900DD16B9 /* LGLrcBundle.bundle */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		3CE67814230D1D7000EBF673 = {
@@ -136,34 +119,12 @@
 		3CE67836230D1D9B00EBF673 /* LGAudioLrcParser */ = {
 			isa = PBXGroup;
 			children = (
+				3CBDF2FD230E93F900DD16B9 /* Resource */,
 				3CBDF2F9230D547500DD16B9 /* Controller */,
-				3CE6783D230D1FF200EBF673 /* Resource */,
 				3CE6785C230D205A00EBF673 /* Model */,
 				3CE6785D230D205A00EBF673 /* View */,
 			);
 			path = LGAudioLrcParser;
-			sourceTree = "<group>";
-		};
-		3CE6783D230D1FF200EBF673 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				3CE6783E230D1FF200EBF673 /* 那就这样吧.lrc */,
-				3CE6783F230D1FF200EBF673 /* 那就这样吧.mp3 */,
-				3CE67840230D1FF200EBF673 /* 董小姐.mp3 */,
-				3CE67841230D1FF200EBF673 /* wall1.jpg */,
-				3CE67842230D1FF200EBF673 /* Dont.lrc */,
-				3CE67843230D1FF200EBF673 /* wall2.jpg */,
-				3CE67844230D1FF200EBF673 /* Dont.mp3 */,
-				3CE67845230D1FF200EBF673 /* 董小姐.lrc */,
-				3CE67846230D1FF200EBF673 /* 歌曲！.mp3 */,
-				3CE67847230D1FF200EBF673 /* 歌曲！.lrc */,
-				3CE67848230D1FF200EBF673 /* wall.jpg */,
-				3CE67849230D1FF200EBF673 /* 冰雨.lrc */,
-				3CE6784A230D1FF200EBF673 /* 别管我要存在感.mp3 */,
-				3CE6784B230D1FF200EBF673 /* 别管我要存在感.lrc */,
-				3CE6784C230D1FF200EBF673 /* 冰雨.mp3 */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		3CE6785C230D205A00EBF673 /* Model */ = {
@@ -173,6 +134,8 @@
 				3CE67838230D1E4400EBF673 /* LGLrcParser.m */,
 				3CE6783A230D1EC800EBF673 /* LGLrcParserModel.h */,
 				3CE6783B230D1EC800EBF673 /* LGLrcParserModel.m */,
+				3CBDF300230E9BEE00DD16B9 /* NSBundle+LrcParser.h */,
+				3CBDF301230E9BEE00DD16B9 /* NSBundle+LrcParser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,24 +227,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CE67855230D1FF200EBF673 /* 歌曲！.mp3 in Resources */,
-				3CE67850230D1FF200EBF673 /* wall1.jpg in Resources */,
+				3CBDF2FF230E93F900DD16B9 /* LGLrcBundle.bundle in Resources */,
 				3CE6782D230D1D7200EBF673 /* LaunchScreen.storyboard in Resources */,
-				3CE67852230D1FF200EBF673 /* wall2.jpg in Resources */,
-				3CE6785B230D1FF200EBF673 /* 冰雨.mp3 in Resources */,
-				3CE6785A230D1FF200EBF673 /* 别管我要存在感.lrc in Resources */,
-				3CE67854230D1FF200EBF673 /* 董小姐.lrc in Resources */,
-				3CE6784E230D1FF200EBF673 /* 那就这样吧.mp3 in Resources */,
-				3CE67859230D1FF200EBF673 /* 别管我要存在感.mp3 in Resources */,
 				3CE6782A230D1D7200EBF673 /* Assets.xcassets in Resources */,
-				3CE67851230D1FF200EBF673 /* Dont.lrc in Resources */,
-				3CE6784F230D1FF200EBF673 /* 董小姐.mp3 in Resources */,
-				3CE67853230D1FF200EBF673 /* Dont.mp3 in Resources */,
-				3CE67858230D1FF200EBF673 /* 冰雨.lrc in Resources */,
-				3CE67856230D1FF200EBF673 /* 歌曲！.lrc in Resources */,
 				3CE67828230D1D7000EBF673 /* Main.storyboard in Resources */,
-				3CE6784D230D1FF200EBF673 /* 那就这样吧.lrc in Resources */,
-				3CE67857230D1FF200EBF673 /* wall.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +289,7 @@
 				3CE67830230D1D7200EBF673 /* main.m in Sources */,
 				3CE67822230D1D7000EBF673 /* AppDelegate.m in Sources */,
 				3CBDF2FC230D54DE00DD16B9 /* LGMusicViewController.m in Sources */,
+				3CBDF302230E9BEE00DD16B9 /* NSBundle+LrcParser.m in Sources */,
 				3CE67863230D219600EBF673 /* LGLrcCell.m in Sources */,
 				3CE6783C230D1EC800EBF673 /* LGLrcParserModel.m in Sources */,
 			);

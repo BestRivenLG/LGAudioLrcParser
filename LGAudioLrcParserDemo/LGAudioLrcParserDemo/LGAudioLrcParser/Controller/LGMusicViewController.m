@@ -12,6 +12,7 @@
 #import "LGLrcCell.h"
 #import "LGLrcParserModel.h"
 #import <AVFoundation/AVFoundation.h>
+#import "NSBundle+LrcParser.h"
 
 @interface LGMusicViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *lrcTableView;
@@ -59,7 +60,7 @@
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
     self.timer = timer;
     
-    UIImage *img=[UIImage imageNamed:@"wall1.jpg"];
+    UIImage *img=[UIImage imageNamed:[[NSBundle lrcBundle]  pathForResource:@"wall1.jpg" ofType:nil]];
     
     UIImageView *bgView=[[UIImageView alloc] initWithImage:img];
     //bgView.alpha=0.8;
@@ -87,8 +88,10 @@
     
     
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
-    
-    self.player=[[AVAudioPlayer alloc] initWithContentsOfURL:[[NSBundle mainBundle]  URLForResource:@"Dont" withExtension:@"mp3"] error:nil];//@"那就这样吧"
+//    self.player=[[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[self bundleWithFileName:@"Dont.mp3"]] error:nil];//@"那就这样吧"
+        self.player=[[AVAudioPlayer alloc] initWithContentsOfURL:[[NSBundle lrcBundle]  URLForResource:@"Dont" withExtension:@"mp3"] error:nil];//@"那就这样吧"
+
+//    self.player=[[AVAudioPlayer alloc] initWithContentsOfURL:[[NSBundle mainBundle]  URLForResource:@"Dont" withExtension:@"mp3"] error:nil];//@"那就这样吧"
     self.player.numberOfLoops=10;
     [self.player prepareToPlay];
     [self.player play];
@@ -119,6 +122,7 @@
     [self.lrcTableView reloadData];
     [self.lrcTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:_currentRow inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
 }
+
 
 
 //实现高斯模糊

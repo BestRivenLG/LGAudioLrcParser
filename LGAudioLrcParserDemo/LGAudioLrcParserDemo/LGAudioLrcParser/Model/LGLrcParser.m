@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LGLrcParser.h"
 #import "LGLrcParserModel.h"
+#import "NSBundle+LrcParser.h"
 
 @interface LGLrcParser ()
 @property double offset;//歌词时间调整变量
@@ -58,7 +59,7 @@
 //处理文件名歌词
 - (void)lrcParserWithFileName:(NSString *)name ofType:(NSString *)type
 {
-    NSBundle *bundle = [NSBundle mainBundle];
+    NSBundle *bundle = [NSBundle lrcBundle];//[NSBundle mainBundle];
     NSString *path = [bundle pathForResource:name ofType:type];
     [self lrcParserWithFilePath:path];
     //构建filepath
