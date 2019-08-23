@@ -13,7 +13,7 @@
 + (NSURL *)lrcBundleURL {
     //先获取framework 的 bundle
     NSBundle *bundle = [NSBundle bundleForClass:[LGAudioLrcParser class]];
-    return [bundle URLForResource:@"LGLrcBundle" withExtension:@"bundle"];
+    return [bundle URLForResource:@"LGAudioLrcParser" withExtension:@"bundle"];
 }
 
 + (instancetype)lrcBundle{
