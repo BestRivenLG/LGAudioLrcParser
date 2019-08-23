@@ -13,6 +13,7 @@
 #import "LGLrcParserModel.h"
 #import <AVFoundation/AVFoundation.h>
 #import "NSBundle+LrcParser.h"
+#import "UIImage+LrcParser.h"
 
 @interface LGMusicViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *lrcTableView;
@@ -60,7 +61,8 @@
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
     self.timer = timer;
     
-    UIImage *img=[UIImage imageNamed:[[NSBundle lrcBundle]  pathForResource:@"wall1.jpg" ofType:nil]];
+    
+    UIImage *img=[UIImage my_bundleImageNamed:@"wall1.jpg"];
     
     UIImageView *bgView=[[UIImageView alloc] initWithImage:img];
     //bgView.alpha=0.8;

@@ -7,16 +7,17 @@
 //
 
 #import "NSBundle+LrcParser.h"
+#import "LGAudioLrcParser.h"
 
 @implementation NSBundle (LrcParser)
 + (NSURL *)lrcBundleURL {
     //先获取framework 的 bundle
-    NSBundle *bundle = [NSBundle bundleForClass:[NSClassFromString(@"LGAudioLrcParser") class]];
+    NSBundle *bundle = [NSBundle bundleForClass:[LGAudioLrcParser class]];
     return [bundle URLForResource:@"LGLrcBundle" withExtension:@"bundle"];
 }
 
 + (instancetype)lrcBundle{
-    return [NSBundle bundleWithURL:[self lrcBundleURL]];
+    return [self bundleWithURL:[self lrcBundleURL]];
 }
 
 + (NSString *)bundleWithFileName:(NSString *)fileName {

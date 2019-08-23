@@ -10,6 +10,8 @@
 		3CBDF2FC230D54DE00DD16B9 /* LGMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF2FB230D54DE00DD16B9 /* LGMusicViewController.m */; };
 		3CBDF2FF230E93F900DD16B9 /* LGLrcBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CBDF2FE230E93F900DD16B9 /* LGLrcBundle.bundle */; };
 		3CBDF302230E9BEE00DD16B9 /* NSBundle+LrcParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF301230E9BEE00DD16B9 /* NSBundle+LrcParser.m */; };
+		3CBDF305230F841D00DD16B9 /* LGAudioLrcParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF304230F841D00DD16B9 /* LGAudioLrcParser.m */; };
+		3CBDF308230F876800DD16B9 /* UIImage+LrcParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF307230F876800DD16B9 /* UIImage+LrcParser.m */; };
 		3CE67822230D1D7000EBF673 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE67821230D1D7000EBF673 /* AppDelegate.m */; };
 		3CE67825230D1D7000EBF673 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE67824230D1D7000EBF673 /* ViewController.m */; };
 		3CE67828230D1D7000EBF673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE67826230D1D7000EBF673 /* Main.storyboard */; };
@@ -30,6 +32,10 @@
 		3CBDF2FE230E93F900DD16B9 /* LGLrcBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LGLrcBundle.bundle; sourceTree = "<group>"; };
 		3CBDF300230E9BEE00DD16B9 /* NSBundle+LrcParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+LrcParser.h"; sourceTree = "<group>"; };
 		3CBDF301230E9BEE00DD16B9 /* NSBundle+LrcParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+LrcParser.m"; sourceTree = "<group>"; };
+		3CBDF303230F841D00DD16B9 /* LGAudioLrcParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGAudioLrcParser.h; sourceTree = "<group>"; };
+		3CBDF304230F841D00DD16B9 /* LGAudioLrcParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGAudioLrcParser.m; sourceTree = "<group>"; };
+		3CBDF306230F876800DD16B9 /* UIImage+LrcParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+LrcParser.h"; sourceTree = "<group>"; };
+		3CBDF307230F876800DD16B9 /* UIImage+LrcParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LrcParser.m"; sourceTree = "<group>"; };
 		3CE6781D230D1D7000EBF673 /* LGAudioLrcParserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGAudioLrcParserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE67820230D1D7000EBF673 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CE67821230D1D7000EBF673 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,6 +142,10 @@
 				3CE6783B230D1EC800EBF673 /* LGLrcParserModel.m */,
 				3CBDF300230E9BEE00DD16B9 /* NSBundle+LrcParser.h */,
 				3CBDF301230E9BEE00DD16B9 /* NSBundle+LrcParser.m */,
+				3CBDF306230F876800DD16B9 /* UIImage+LrcParser.h */,
+				3CBDF307230F876800DD16B9 /* UIImage+LrcParser.m */,
+				3CBDF303230F841D00DD16B9 /* LGAudioLrcParser.h */,
+				3CBDF304230F841D00DD16B9 /* LGAudioLrcParser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,7 +296,9 @@
 				3CE67825230D1D7000EBF673 /* ViewController.m in Sources */,
 				3CE67860230D211500EBF673 /* LGRefreshLrcLabel.m in Sources */,
 				3CE67839230D1E4400EBF673 /* LGLrcParser.m in Sources */,
+				3CBDF308230F876800DD16B9 /* UIImage+LrcParser.m in Sources */,
 				3CE67830230D1D7200EBF673 /* main.m in Sources */,
+				3CBDF305230F841D00DD16B9 /* LGAudioLrcParser.m in Sources */,
 				3CE67822230D1D7000EBF673 /* AppDelegate.m in Sources */,
 				3CBDF2FC230D54DE00DD16B9 /* LGMusicViewController.m in Sources */,
 				3CBDF302230E9BEE00DD16B9 /* NSBundle+LrcParser.m in Sources */,

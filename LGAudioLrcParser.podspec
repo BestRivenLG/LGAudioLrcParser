@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "LGAudioLrcParser"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "歌词解析类"
   spec.description  = <<-DESC
 			歌词解析类。
@@ -44,7 +44,9 @@ Pod::Spec.new do |spec|
   end
 
   spec.resource = 'LGAudioLrcParserDemo/LGAudioLrcParserDemo/LGAudioLrcParser/Resource/LGLrcBundle.bundle'
-  spec.resource_bundles = {
-  'LGAudioLrcParser' => ['LGAudioLrcParserDemo/LGAudioLrcParserDemo/LGAudioLrcParser/Resource/LGLrcBundle.bundle']
+  #spec.resource_bundles = {
+  'LGLrcBundle' => ['LGAudioLrcParserDemo/LGAudioLrcParserDemo/LGAudioLrcParser/Resource/LGLrcBundle.bundle']
+  spec.resource = "LGAudioLrcParserDemo/LGAudioLrcParserDemo/LGAudioLrcParser/Resource/LGLrcBundle.bundle"
+
 }
 end
