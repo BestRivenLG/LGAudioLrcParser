@@ -14,6 +14,7 @@
     //先获取framework 的 bundle
     NSBundle *bundle = [NSBundle bundleForClass:[LGAudioLrcParser class]];
     return [bundle URLForResource:@"LGAudioLrcParser" withExtension:@"bundle"];
+    
 }
 
 + (instancetype)lrcBundle{
